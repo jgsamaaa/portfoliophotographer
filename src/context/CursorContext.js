@@ -30,7 +30,8 @@ const CursorProvider = ({ children }) => {
     } else {
       setCursorBG('none');
     }
-  });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // cursor variants
   const cursorVariants = {
